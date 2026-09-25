@@ -1,0 +1,112 @@
+[
+  {
+    "label": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+    "input": {
+      "na": 140,
+      "cl": 104,
+      "hco3": 24
+    },
+    "expected": {
+      "raw": {
+        "ag": 12
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "na": 140,
+      "cl": 104,
+      "hco3": 24
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+    "input": {
+      "na": 140,
+      "cl": 115,
+      "hco3": 15
+    },
+    "expected": {
+      "raw": {
+        "ag": 10
+      },
+      "level": "low",
+      "verdict": "hiperclorêmica"
+    },
+    "originalInput": {
+      "na": 140,
+      "cl": 115,
+      "hco3": 15
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+    "input": {
+      "na": 140,
+      "cl": 100,
+      "hco3": 10,
+      "alb": 4
+    },
+    "expected": {
+      "raw": {
+        "ag": 30,
+        "agc": 30,
+        "dr": 1.286
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "na": 140,
+      "cl": 100,
+      "hco3": 10,
+      "alb": 4
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+    "input": {
+      "na": 138,
+      "cl": 108,
+      "hco3": 18,
+      "alb": 2
+    },
+    "expected": {
+      "raw": {
+        "ag": 12,
+        "agc": 17,
+        "dr": 0.833
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "na": 138,
+      "cl": 108,
+      "hco3": 18,
+      "alb": 2
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+    "input": {
+      "na": 140,
+      "cl": 90,
+      "hco3": 20
+    },
+    "expected": {
+      "raw": {
+        "ag": 30,
+        "dr": 4.5
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "na": 140,
+      "cl": 90,
+      "hco3": 20
+    },
+    "expandedZeroOptions": []
+  }
+]

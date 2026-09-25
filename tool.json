@@ -1,0 +1,234 @@
+{
+  "tool": {
+    "id": "anion-gap",
+    "title": "Ânion gap (corrigido e delta-delta)",
+    "short": "Ânion gap, correção pela albumina e razão delta",
+    "desc": "Calcule o ânion gap sérico, a correção pela albumina (Figge) e a razão delta (ΔAG/ΔHCO₃⁻) para identificar distúrbios ácido-base mistos.",
+    "lead": "Estima os ânions não medidos no plasma para classificar a acidose metabólica (ânion gap alto ou normal) e, pela razão delta, revelar distúrbios associados.",
+    "spec": [
+      "medicina-intensiva",
+      "medicina-de-emergencia",
+      "nefrologia",
+      "clinica-medica"
+    ],
+    "fields": [
+      [
+        "na",
+        "Sódio",
+        "num",
+        {
+          "min": 100,
+          "max": 180,
+          "unit": "mEq/L",
+          "ph": "140"
+        }
+      ],
+      [
+        "cl",
+        "Cloro",
+        "num",
+        {
+          "min": 60,
+          "max": 140,
+          "unit": "mEq/L",
+          "ph": "104"
+        }
+      ],
+      [
+        "hco3",
+        "Bicarbonato",
+        "num",
+        {
+          "min": 2,
+          "max": 50,
+          "step": 0.1,
+          "unit": "mEq/L",
+          "ph": "24"
+        }
+      ],
+      [
+        "alb",
+        "Albumina",
+        "num",
+        {
+          "min": 0.5,
+          "max": 6,
+          "step": 0.1,
+          "unit": "g/dL",
+          "ph": "4,0",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>Ânion gap</strong> = Na⁺ − (Cl⁻ + HCO₃⁻).</p><p><strong>Corrigido pela albumina</strong> = AG + 2,5 × (4,0 − albumina em g/dL).</p><p><strong>Razão delta</strong> = (AG − 12) ÷ (24 − HCO₃⁻).</p>",
+    "table": [
+      [
+        "Razão delta",
+        "Interpretação (Rastegar, 2007)"
+      ],
+      [
+        "&lt; 0,4",
+        "Acidose hiperclorêmica com AG normal"
+      ],
+      [
+        "0,4 a &lt; 1",
+        "Acidose com AG alto associada a acidose com AG normal"
+      ],
+      [
+        "1 a 2",
+        "Acidose com AG alto isolada (acidose lática em média 1,6; cetoacidose perto de 1)"
+      ],
+      [
+        "&gt; 2",
+        "Acidose com AG alto associada a alcalose metabólica ou acidose respiratória crônica compensada"
+      ]
+    ],
+    "table_note": "Referência de 12 mEq/L para o AG; confira o valor normal do seu laboratório (eletrodos íon-seletivos modernos tendem a dar valores menores).",
+    "tips": [
+      "Corrija sempre pela albumina no paciente crítico: cada 1 g/dL a menos esconde cerca de 2,5 mEq/L de ânion gap, e uma acidose lática pode passar despercebida.",
+      "Causas de AG alto: lactato, cetoacidose, uremia e tóxicos (metanol, etilenoglicol, salicilato). Com AG alto sem causa clara, calcule o gap osmolar.",
+      "AG normal com acidose: perdas digestivas de bicarbonato (diarreia), acidose tubular renal, ou reposição generosa de soro fisiológico.",
+      "A razão delta é aproximada; use-a como pista e confirme com a história, os eletrólitos urinários e a evolução."
+    ],
+    "sources": [
+      [
+        "Kraut JA, Madias NE. Serum anion gap: its uses and limitations in clinical medicine. Clin J Am Soc Nephrol, 2007.",
+        "https://doi.org/10.2215/CJN.03020906"
+      ],
+      [
+        "Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med, 1998.",
+        "https://doi.org/10.1097/00003246-199811000-00019"
+      ],
+      [
+        "Rastegar A. Use of the ΔAG/ΔHCO3− ratio in the diagnosis of mixed acid-base disorders. J Am Soc Nephrol, 2007.",
+        "https://doi.org/10.1681/ASN.2006121408"
+      ]
+    ],
+    "cases": [
+      [
+        "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        {
+          "na": 140,
+          "cl": 104,
+          "hco3": 24
+        },
+        {
+          "raw": {
+            "ag": 12
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        {
+          "na": 140,
+          "cl": 115,
+          "hco3": 15
+        },
+        {
+          "raw": {
+            "ag": 10
+          },
+          "level": "low",
+          "verdict": "hiperclorêmica"
+        }
+      ],
+      [
+        "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        {
+          "na": 140,
+          "cl": 100,
+          "hco3": 10,
+          "alb": 4
+        },
+        {
+          "raw": {
+            "ag": 30,
+            "agc": 30,
+            "dr": 1.286
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        {
+          "na": 138,
+          "cl": 108,
+          "hco3": 18,
+          "alb": 2
+        },
+        {
+          "raw": {
+            "ag": 12,
+            "agc": 17,
+            "dr": 0.833
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        {
+          "na": 140,
+          "cl": 90,
+          "hco3": 20
+        },
+        {
+          "raw": {
+            "ag": 30,
+            "dr": 4.5
+          },
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 1,
+      "passed": 1,
+      "cases": [
+        {
+          "label": "Conservação algébrica: 142−(105+25)=12",
+          "input": {
+            "na": 142,
+            "cl": 105,
+            "hco3": 25
+          },
+          "expected": {
+            "ag": 12
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}
