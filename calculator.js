@@ -1,11 +1,11 @@
-/* tool-anion-gap · Elucenia · https://github.com/Elucenia/tool-anion-gap
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-anion-gap · ELUCENIA · https://github.com/Elucenia/tool-anion-gap
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"anion-gap","title":"Ânion gap (corrigido e delta-delta)","fields":[["na","Sódio","num",{"min":100,"max":180,"unit":"mEq/L","ph":"140"}],["cl","Cloro","num",{"min":60,"max":140,"unit":"mEq/L","ph":"104"}],["hco3","Bicarbonato","num",{"min":2,"max":50,"step":0.1,"unit":"mEq/L","ph":"24"}],["alb","Albumina","num",{"min":0.5,"max":6,"step":0.1,"unit":"g/dL","ph":"4,0","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
