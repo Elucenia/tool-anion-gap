@@ -1,0 +1,1141 @@
+{
+  "schema": "elucenia-native-tool-actual-r6-local-HTTP-subset-r5",
+  "id": "anion-gap",
+  "sourceReceipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r6-all-calculators-http-results.json",
+    "bytes": 7105396,
+    "sha256": "c0b1e4dc320ce807e78c0444e629c1269b545b6e2ac87c265d896073d8c34ecb"
+  },
+  "servedBuildId": "jN-2wbRrarMjYPwdPnRHh",
+  "checker": {
+    "file": "reports/review-20261005-completion/deploy-lock/verify-r6-all-calculators-http.cjs",
+    "sha256": "92411a9e01fe36e1bf380c3336f2171bdb523a02ff09683da75927b12b33b3fa",
+    "bytes": 20735
+  },
+  "health": {
+    "url": "http://127.0.0.1:3067/api/health",
+    "startedAt": "2026-10-05T17:35:43.039Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json",
+      "retryAfter": null,
+      "cacheControl": "no-store",
+      "nosniff": "nosniff"
+    },
+    "body": {
+      "status": "ok",
+      "application": "ELUCENIA",
+      "framework": "Next.js",
+      "version": "1.0.0"
+    },
+    "responseSha256": "65f95645e7826371eb2d9d3f96e0fed52ea4b88c77203f0cf2511769e57cd108",
+    "bytes": 80,
+    "elapsedMs": 27.345699999999994
+  },
+  "identity": {
+    "url": "http://127.0.0.1:3067/_next/data/jN-2wbRrarMjYPwdPnRHh/en/tools.json",
+    "startedAt": "2026-10-05T17:35:43.068Z",
+    "status": 200,
+    "headers": {
+      "contentType": "application/json; charset=utf-8",
+      "retryAfter": null,
+      "cacheControl": "s-maxage=31536000",
+      "nosniff": "nosniff"
+    },
+    "responseSha256": "404601e2c283a588a2f41af4feb5113d1993f76cc22f73a7b8ef4f5d17a82fa8",
+    "bytes": 103853,
+    "elapsedMs": 14.542600000000007,
+    "semanticMatchWithCompiledCatalog": true
+  },
+  "sourceCalculator": {
+    "file": "deliveries/elucenia-next-hostinger-r6/private/tool-code/anion-gap/calculator.js",
+    "sha256": "89e6f9237bb1b0b716b2cc15ed41d2a6f3c22c8ff80349b30246e126a0ba2c5a",
+    "bytes": 5378
+  },
+  "sourceCalculatorMatchesCurrentCandidate": true,
+  "toolStatus": {
+    "cases": 5,
+    "replayed": 5,
+    "passed": 5,
+    "failed": 0,
+    "status": "passed"
+  },
+  "cases": [
+    {
+      "id": "anion-gap",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+      "originalInput": {
+        "na": 140,
+        "cl": 104,
+        "hco3": 24
+      },
+      "input": {
+        "na": 140,
+        "cl": 104,
+        "hco3": 24
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ag": 12
+        },
+        "level": "low"
+      },
+      "recordedResult": {
+        "main": [
+          "12,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 12,
+          "agc": 12
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "na": 140,
+            "cl": 104,
+            "hco3": 24
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+          "startedAt": "2026-10-05T17:35:47.312Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "anion-gap",
+              "main": [
+                "12,0",
+                "mEq/L"
+              ],
+              "label": "Ânion gap",
+              "raw": {
+                "ag": 12,
+                "agc": 12
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "5b386c1ccf948ef4ad62a0c4ef6f6e49257c232e4dea13f7e91e36611214d46c",
+          "bytes": 136,
+          "elapsedMs": 3.893000000000029
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "startedAt": "2026-10-05T17:35:47.312Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "anion-gap",
+            "main": [
+              "12,0",
+              "mEq/L"
+            ],
+            "label": "Ânion gap",
+            "raw": {
+              "ag": 12,
+              "agc": 12
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "5b386c1ccf948ef4ad62a0c4ef6f6e49257c232e4dea13f7e91e36611214d46c",
+        "bytes": 136,
+        "elapsedMs": 3.893000000000029
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ag",
+            "expected": 12,
+            "obtained": 12,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ag",
+            "expected": 12,
+            "obtained": 12,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.agc",
+            "expected": 12,
+            "obtained": 12,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "12,0",
+            "obtained": "12,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mEq/L",
+            "obtained": "mEq/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "anion-gap",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+      "originalInput": {
+        "na": 140,
+        "cl": 115,
+        "hco3": 15
+      },
+      "input": {
+        "na": 140,
+        "cl": 115,
+        "hco3": 15
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ag": 10
+        },
+        "level": "low",
+        "verdict": "hiperclorêmica"
+      },
+      "recordedResult": {
+        "main": [
+          "10,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 10,
+          "agc": 10
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "na": 140,
+            "cl": 115,
+            "hco3": 15
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+          "startedAt": "2026-10-05T17:35:47.625Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "anion-gap",
+              "main": [
+                "10,0",
+                "mEq/L"
+              ],
+              "label": "Ânion gap",
+              "raw": {
+                "ag": 10,
+                "agc": 10
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "24d99e7e5e32431711a6dd10e1916b97feddebee6411abd1d4346ee773e99bdd",
+          "bytes": 136,
+          "elapsedMs": 8.5583000000006
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "startedAt": "2026-10-05T17:35:47.625Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "anion-gap",
+            "main": [
+              "10,0",
+              "mEq/L"
+            ],
+            "label": "Ânion gap",
+            "raw": {
+              "ag": 10,
+              "agc": 10
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "24d99e7e5e32431711a6dd10e1916b97feddebee6411abd1d4346ee773e99bdd",
+        "bytes": 136,
+        "elapsedMs": 8.5583000000006
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ag",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ag",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.agc",
+            "expected": 10,
+            "obtained": 10,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "10,0",
+            "obtained": "10,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mEq/L",
+            "obtained": "mEq/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          },
+          {
+            "key": "verdict",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "anion-gap",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+      "originalInput": {
+        "na": 140,
+        "cl": 100,
+        "hco3": 10,
+        "alb": 4
+      },
+      "input": {
+        "na": 140,
+        "cl": 100,
+        "hco3": 10,
+        "alb": 4
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 1.286
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "30,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 1.2857142857142858
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "na": 140,
+            "cl": 100,
+            "hco3": 10,
+            "alb": 4
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+          "startedAt": "2026-10-05T17:35:47.937Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "anion-gap",
+              "main": [
+                "30,0",
+                "mEq/L"
+              ],
+              "label": "Ânion gap",
+              "raw": {
+                "ag": 30,
+                "agc": 30,
+                "dr": 1.2857142857142858
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "e7208c5e258b105e8d654e02b617ebc2c1f23a4f3ca4c933017cf177d6d209d5",
+          "bytes": 160,
+          "elapsedMs": 3.054399999999987
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "startedAt": "2026-10-05T17:35:47.937Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "anion-gap",
+            "main": [
+              "30,0",
+              "mEq/L"
+            ],
+            "label": "Ânion gap",
+            "raw": {
+              "ag": 30,
+              "agc": 30,
+              "dr": 1.2857142857142858
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "e7208c5e258b105e8d654e02b617ebc2c1f23a4f3ca4c933017cf177d6d209d5",
+        "bytes": 160,
+        "elapsedMs": 3.054399999999987
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ag",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.agc",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.dr",
+            "expected": 1.286,
+            "obtained": 1.2857142857142858,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.0002857142857142225,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ag",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.agc",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dr",
+            "expected": 1.2857142857142858,
+            "obtained": 1.2857142857142858,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "30,0",
+            "obtained": "30,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mEq/L",
+            "obtained": "mEq/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "anion-gap",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+      "originalInput": {
+        "na": 138,
+        "cl": 108,
+        "hco3": 18,
+        "alb": 2
+      },
+      "input": {
+        "na": 138,
+        "cl": 108,
+        "hco3": 18,
+        "alb": 2
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ag": 12,
+          "agc": 17,
+          "dr": 0.833
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "12,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 12,
+          "agc": 17,
+          "dr": 0.8333333333333334
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "na": 138,
+            "cl": 108,
+            "hco3": 18,
+            "alb": 2
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+          "startedAt": "2026-10-05T17:35:48.251Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "anion-gap",
+              "main": [
+                "12,0",
+                "mEq/L"
+              ],
+              "label": "Ânion gap",
+              "raw": {
+                "ag": 12,
+                "agc": 17,
+                "dr": 0.8333333333333334
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "b8396a917a9e158ebda6c646f6130dd0ee415e4c2e0d59de776e5142cdb01014",
+          "bytes": 160,
+          "elapsedMs": 4.6414999999997235
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "startedAt": "2026-10-05T17:35:48.251Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "anion-gap",
+            "main": [
+              "12,0",
+              "mEq/L"
+            ],
+            "label": "Ânion gap",
+            "raw": {
+              "ag": 12,
+              "agc": 17,
+              "dr": 0.8333333333333334
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "b8396a917a9e158ebda6c646f6130dd0ee415e4c2e0d59de776e5142cdb01014",
+        "bytes": 160,
+        "elapsedMs": 4.6414999999997235
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ag",
+            "expected": 12,
+            "obtained": 12,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.agc",
+            "expected": 17,
+            "obtained": 17,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.dr",
+            "expected": 0.833,
+            "obtained": 0.8333333333333334,
+            "tolerance": 0.0005000100000000001,
+            "difference": 0.00033333333333340764,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ag",
+            "expected": 12,
+            "obtained": 12,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.agc",
+            "expected": 17,
+            "obtained": 17,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dr",
+            "expected": 0.8333333333333334,
+            "obtained": 0.8333333333333334,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "12,0",
+            "obtained": "12,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mEq/L",
+            "obtained": "mEq/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "anion-gap",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+      "originalInput": {
+        "na": 140,
+        "cl": 90,
+        "hco3": 20
+      },
+      "input": {
+        "na": 140,
+        "cl": 90,
+        "hco3": 20
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "ag": 30,
+          "dr": 4.5
+        },
+        "level": "high"
+      },
+      "recordedResult": {
+        "main": [
+          "30,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 4.5
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r6/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "origin": "http://127.0.0.1:3067",
+        "payload": {
+          "input": {
+            "na": 140,
+            "cl": 90,
+            "hco3": 20
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+          "startedAt": "2026-10-05T17:35:48.565Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "anion-gap",
+              "main": [
+                "30,0",
+                "mEq/L"
+              ],
+              "label": "Ânion gap",
+              "raw": {
+                "ag": 30,
+                "agc": 30,
+                "dr": 4.5
+              },
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "ff19c105af8fc75bc8f93bc3b44d05d3deb8f87567412edff25e8cf7f17d8480",
+          "bytes": 145,
+          "elapsedMs": 4.2422999999998865
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3067/api/tools/anion-gap/calculate",
+        "startedAt": "2026-10-05T17:35:48.565Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "anion-gap",
+            "main": [
+              "30,0",
+              "mEq/L"
+            ],
+            "label": "Ânion gap",
+            "raw": {
+              "ag": 30,
+              "agc": 30,
+              "dr": 4.5
+            },
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "ff19c105af8fc75bc8f93bc3b44d05d3deb8f87567412edff25e8cf7f17d8480",
+        "bytes": 145,
+        "elapsedMs": 4.2422999999998865
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.raw.ag",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.dr",
+            "expected": 4.5,
+            "obtained": 4.5,
+            "tolerance": 0.050000010000000004,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.ag",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.agc",
+            "expected": 30,
+            "obtained": 30,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.dr",
+            "expected": 4.5,
+            "obtained": 4.5,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "30,0",
+            "obtained": "30,0",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "mEq/L",
+            "obtained": "mEq/L",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": [
+          {
+            "key": "level",
+            "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+          }
+        ]
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "predictProstateHasSeparateFullCurveOracleReplay": true,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r6 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false,
+  "newIndependentOracle": false,
+  "actualBrowserJourney": false,
+  "hostingerDeploymentVerified": false
+}
