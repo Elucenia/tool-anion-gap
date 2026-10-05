@@ -1,6 +1,14 @@
 [
   {
-    "label": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+    "id": "anion-gap",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+    "originalInput": {
+      "na": 140,
+      "cl": 104,
+      "hco3": 24
+    },
     "input": {
       "na": 140,
       "cl": 104,
@@ -12,15 +20,36 @@
       },
       "level": "low"
     },
-    "originalInput": {
-      "na": 140,
-      "cl": 104,
-      "hco3": 24
+    "recordedResult": {
+      "main": [
+        "12,0",
+        "mEq/L"
+      ],
+      "label": "Ânion gap",
+      "raw": {
+        "ag": 12,
+        "agc": 12
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+    "id": "anion-gap",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+    "originalInput": {
+      "na": 140,
+      "cl": 115,
+      "hco3": 15
+    },
     "input": {
       "na": 140,
       "cl": 115,
@@ -33,15 +62,37 @@
       "level": "low",
       "verdict": "hiperclorêmica"
     },
-    "originalInput": {
-      "na": 140,
-      "cl": 115,
-      "hco3": 15
+    "recordedResult": {
+      "main": [
+        "10,0",
+        "mEq/L"
+      ],
+      "label": "Ânion gap",
+      "raw": {
+        "ag": 10,
+        "agc": 10
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+    "id": "anion-gap",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+    "originalInput": {
+      "na": 140,
+      "cl": 100,
+      "hco3": 10,
+      "alb": 4
+    },
     "input": {
       "na": 140,
       "cl": 100,
@@ -56,16 +107,38 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "na": 140,
-      "cl": 100,
-      "hco3": 10,
-      "alb": 4
+    "recordedResult": {
+      "main": [
+        "30,0",
+        "mEq/L"
+      ],
+      "label": "Ânion gap",
+      "raw": {
+        "ag": 30,
+        "agc": 30,
+        "dr": 1.2857142857142858
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+    "id": "anion-gap",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+    "originalInput": {
+      "na": 138,
+      "cl": 108,
+      "hco3": 18,
+      "alb": 2
+    },
     "input": {
       "na": 138,
       "cl": 108,
@@ -80,16 +153,37 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "na": 138,
-      "cl": 108,
-      "hco3": 18,
-      "alb": 2
+    "recordedResult": {
+      "main": [
+        "12,0",
+        "mEq/L"
+      ],
+      "label": "Ânion gap",
+      "raw": {
+        "ag": 12,
+        "agc": 17,
+        "dr": 0.8333333333333334
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+    "id": "anion-gap",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+    "originalInput": {
+      "na": 140,
+      "cl": 90,
+      "hco3": 20
+    },
     "input": {
       "na": 140,
       "cl": 90,
@@ -102,11 +196,25 @@
       },
       "level": "high"
     },
-    "originalInput": {
-      "na": 140,
-      "cl": 90,
-      "hco3": 20
+    "recordedResult": {
+      "main": [
+        "30,0",
+        "mEq/L"
+      ],
+      "label": "Ânion gap",
+      "raw": {
+        "ag": 30,
+        "agc": 30,
+        "dr": 4.5
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

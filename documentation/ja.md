@@ -1,0 +1,85 @@
+<!-- ELUCENIA technical documentation · anion-gap · ja · no clinical/professional/rights approval -->
+
+# アニオンギャップ（補正値・delta-delta）
+
+[条件・出典・許諾](https://elucenia.org/ja/tools/anion-gap)
+
+## 使い方
+
+ポータルでツールを使用するか、ローカルHTTPサーバー経由でindex.htmlを開いてください。言語を選択し、項目を入力して計算してください。
+
+## 入力項目と単位
+
+### ナトリウム
+
+`na`
+
+mEq/L · 範囲: 100–180
+
+### クロール
+
+`cl`
+
+mEq/L · 範囲: 60–140
+
+### 重炭酸イオン
+
+`hco3`
+
+mEq/L · 範囲: 2–50
+
+### アルブミン
+
+`alb`
+
+g/dL · 任意 · 範囲: 0.5–6
+
+## 方法の版
+
+K+を含まないAG；Figge 1998補正2.5×(4−アルブミン)；デルタAG基準12/デルタHCO₃基準24
+
+## 記載された計算式
+
+アニオンギャップ = Na⁺ − (Cl⁻ + HCO₃⁻).
+
+アルブミン補正値 = AG + 2.5 × (4.0 − アルブミン（g/dL）).
+
+デルタ比 = (AG − 12) ÷ (24 − HCO₃⁻).
+
+## 限界・対象集団
+
+アニオンギャップの基準値は検査方法に依存し、個人差があります。異常値だけで原因を一つに特定することはできず、検査誤差を反映する場合もあります。混合性酸塩基異常の同定にΔAG/ΔHCO3比だけを用いてはいけません。追加の臨床情報と検査データが必要です。アルブミン補正と計算に用いる基準値は、採用した変法の出典で確認する必要があります。
+
+## 参考文献
+
+- [Kraut JA, Madias NE. Serum anion gap: its uses and limitations in clinical medicine. Clin J Am Soc Nephrol, 2007.](https://doi.org/10.2215/CJN.03020906)
+
+- [Figge J, Jabor A, Kazda A, Fencl V. Anion gap and hypoalbuminemia. Crit Care Med, 1998.](https://doi.org/10.1097/00003246-199811000-00019)
+
+- [Rastegar A. Use of the ΔAG/ΔHCO3− ratio in the diagnosis of mixed acid-base disorders. J Am Soc Nephrol, 2007.](https://doi.org/10.1681/ASN.2006121408)
+
+## 技術テストの再現
+
+このリポジトリのルートディレクトリでnode test.cjsを実行すると、記録された合成ケースを再実行できます。元の入力、期待結果、許容誤差は保持されています。技術テストは臨床的検証を意味しません。
+
+```sh
+node test.cjs
+```
+
+tool.jsonには出典、版、確認範囲が記録されています。examples.jsonには合成入力と期待結果が保持され、results.jsonには実際に得られた結果が記録されています。
+
+[記録・参考文献](../tool.json) · [JavaScriptコード](../calculator.js) · [参照ケース](../examples.json) · [results.json](../results.json)
+
+## 確認状況と使用条件
+
+独立した臨床レビューは実施されていません。
+
+このインターフェースは独自に作成した翻訳であり、公式版や認証済みの版ではありません。独立した臨床レビュー、専門家による言語レビュー、評価尺度等の権利許諾の確認は実施されていません。
+
+式または分類の結果です。解釈、対応、適用可能性は専門家による評価と選択した出典に依存します。
+
+## ライセンスと帰属表示
+
+Apache-2.0はELUCENIAのコードにのみ適用されます。評価尺度等、出版物、翻訳、データの権利は、それぞれの権利者に帰属します。LICENSEとNOTICEを保持してください。
+
+ELUCENIA · Felipe Guedes · Copyright © 2026

@@ -1,0 +1,553 @@
+{
+  "id": "anion-gap",
+  "at": "2026-10-05T17:29:02.420Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/anion-gap/calculator.js",
+    "bytes": 5378,
+    "sha256": "89e6f9237bb1b0b716b2cc15ed41d2a6f3c22c8ff80349b30246e126a0ba2c5a"
+  },
+  "cases": [
+    {
+      "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+      "input": {
+        "na": 140,
+        "cl": 104,
+        "hco3": 24
+      },
+      "obtained": {
+        "id": "anion-gap",
+        "main": [
+          "12,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 12,
+          "agc": 12
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ag",
+          "expected": 12,
+          "obtained": 12,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ag",
+          "expected": 12,
+          "obtained": 12,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.agc",
+          "expected": 12,
+          "obtained": 12,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "12,0",
+          "obtained": "12,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mEq/L",
+          "obtained": "mEq/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+      "input": {
+        "na": 140,
+        "cl": 115,
+        "hco3": 15
+      },
+      "obtained": {
+        "id": "anion-gap",
+        "main": [
+          "10,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 10,
+          "agc": 10
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ag",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ag",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.agc",
+          "expected": 10,
+          "obtained": 10,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "10,0",
+          "obtained": "10,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mEq/L",
+          "obtained": "mEq/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+      "input": {
+        "na": 140,
+        "cl": 100,
+        "hco3": 10,
+        "alb": 4
+      },
+      "obtained": {
+        "id": "anion-gap",
+        "main": [
+          "30,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 1.2857142857142858
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ag",
+          "expected": 30,
+          "obtained": 30,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.agc",
+          "expected": 30,
+          "obtained": 30,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dr",
+          "expected": 1.286,
+          "obtained": 1.2857142857142858,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.0002857142857142225,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ag",
+          "expected": 30,
+          "obtained": 30,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.agc",
+          "expected": 30,
+          "obtained": 30,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dr",
+          "expected": 1.2857142857142858,
+          "obtained": 1.2857142857142858,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "30,0",
+          "obtained": "30,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mEq/L",
+          "obtained": "mEq/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+      "input": {
+        "na": 138,
+        "cl": 108,
+        "hco3": 18,
+        "alb": 2
+      },
+      "obtained": {
+        "id": "anion-gap",
+        "main": [
+          "12,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 12,
+          "agc": 17,
+          "dr": 0.8333333333333334
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ag",
+          "expected": 12,
+          "obtained": 12,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.agc",
+          "expected": 17,
+          "obtained": 17,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dr",
+          "expected": 0.833,
+          "obtained": 0.8333333333333334,
+          "tolerance": 0.0005000100000000001,
+          "difference": 0.00033333333333340764,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ag",
+          "expected": 12,
+          "obtained": 12,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.agc",
+          "expected": 17,
+          "obtained": 17,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dr",
+          "expected": 0.8333333333333334,
+          "obtained": 0.8333333333333334,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "12,0",
+          "obtained": "12,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mEq/L",
+          "obtained": "mEq/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+      "input": {
+        "na": 140,
+        "cl": 90,
+        "hco3": 20
+      },
+      "obtained": {
+        "id": "anion-gap",
+        "main": [
+          "30,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 4.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.ag",
+          "expected": 30,
+          "obtained": 30,
+          "tolerance": 1e-8,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.dr",
+          "expected": 4.5,
+          "obtained": 4.5,
+          "tolerance": 0.050000010000000004,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.ag",
+          "expected": 30,
+          "obtained": 30,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.agc",
+          "expected": 30,
+          "obtained": 30,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.dr",
+          "expected": 4.5,
+          "obtained": 4.5,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "30,0",
+          "obtained": "30,0",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "mEq/L",
+          "obtained": "mEq/L",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 42,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
