@@ -83,3 +83,46 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Trou anionique normal
+
+
+### 2
+
+Trou anionique normal : s’il existe une acidose métabolique, elle est hyperchlorémique
+
+
+### 3
+
+Trou anionique augmenté : acidose métabolique due à des anions non mesurés (lactate, cétones, urémie, toxiques)
+
+| Détails du résultat | |
+| --- | --- |
+| Trou anionique corrigé pour l’albumine | 30,0 mEq/L |
+| Rapport delta (ΔAG/ΔHCO₃⁻) | 1,29 : acidose à trou anionique élevé isolée |
+
+
+### 4
+
+Trou anionique augmenté : acidose métabolique due à des anions non mesurés (lactate, cétones, urémie, toxiques)
+
+| Détails du résultat | |
+| --- | --- |
+| Trou anionique corrigé pour l’albumine | 17,0 mEq/L |
+| Rapport delta (ΔAG/ΔHCO₃⁻) | 0,83 : acidose à trou anionique élevé associée à une acidose à trou anionique normal |
+
+
+### 5
+
+Trou anionique augmenté : acidose métabolique due à des anions non mesurés (lactate, cétones, urémie, toxiques)
+
+| Détails du résultat | |
+| --- | --- |
+| Rapport delta (ΔAG/ΔHCO₃⁻) | 4,50 : acidose à trou anionique élevé associée à une alcalose métabolique (ou à une acidose respiratoire chronique compensée) |
+

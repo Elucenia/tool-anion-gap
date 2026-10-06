@@ -171,7 +171,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "AG sem K+; correção Figge 1998 2,5×(4−albumina); delta AG 12/delta HCO 3 24",
-    "implementationVersion": "anion-gap@native-2026-10-03+89e6f9237bb1",
+    "implementationVersion": "anion-gap@native-2026-10-05+eee21eda0454",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/17699401/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -303,7 +303,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "89e6f9237bb1b0b716b2cc15ed41d2a6f3c22c8ff80349b30246e126a0ba2c5a"
+      "implementationHash": "eee21eda04547b767022bd24694abb2ca22ae89618e65080c5e02d15f640a260",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "anion-gap@native-2026-10-03+89e6f9237bb1",
+          "previousImplementationHash": "89e6f9237bb1b0b716b2cc15ed41d2a6f3c22c8ff80349b30246e126a0ba2c5a",
+          "implementationHash": "eee21eda04547b767022bd24694abb2ca22ae89618e65080c5e02d15f640a260",
+          "scientificBodySha256": "952262129b477318bcbbda46902ce8c62d3ac991812ca79d3d712791c2f0b010",
+          "metadataContractHash": "b37e8245328003b53c48d12d9cb40bef93bc7ec5741cbe5b0494a47185d6c8a7",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O valor de referência do ânion gap depende do método laboratorial e apresenta variabilidade entre pessoas. Valores alterados não identificam uma causa única e podem refletir erro de laboratório. A razão ΔAG/ΔHCO3 não deve ser usada isoladamente para identificar distúrbios ácido-base mistos; são necessários dados clínicos e laboratoriais adicionais. A correção por albumina e os valores de referência usados no cálculo requerem conferência nas fontes da variante.",
     "sourceLimitEvidence": {
@@ -322,20 +350,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/anion-gap/calculator.js",
-    "bytes": 5378,
-    "sha256": "89e6f9237bb1b0b716b2cc15ed41d2a6f3c22c8ff80349b30246e126a0ba2c5a"
+    "bytes": 5583,
+    "sha256": "eee21eda04547b767022bd24694abb2ca22ae89618e65080c5e02d15f640a260"
   },
-  "sourceToolSha256": "a2ed85105ffb89bd9ecd55f259ee0433c0f01ffa339ed78c6c41c681a3023473",
+  "sourceToolSha256": "c6526a8aa6ddf6df5c804d124dd205f87b3032152372d01b2fe10ccbf3bee63c",
   "omittedFullReferenceBanks": [
     {
       "rows": 1,
       "sha256": "3bc2a3afb04620e1aefc17a295b47e05dc9f5ea5b5b64aa6f007265854cb7b44",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 1,
       "sha256": "3bc2a3afb04620e1aefc17a295b47e05dc9f5ea5b5b64aa6f007265854cb7b44",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

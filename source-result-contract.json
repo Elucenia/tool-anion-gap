@@ -1,0 +1,324 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "anion-gap",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "62508e9c2c1418ef44265b8e2113af836cd63886",
+    "oldEngineSha256": "89e6f9237bb1b0b716b2cc15ed41d2a6f3c22c8ff80349b30246e126a0ba2c5a",
+    "currentEngineSha256": "eee21eda04547b767022bd24694abb2ca22ae89618e65080c5e02d15f640a260"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+      "input": {
+        "na": 140,
+        "cl": 104,
+        "hco3": 24
+      },
+      "publicOutput": {
+        "id": "anion-gap",
+        "main": [
+          "12,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 12,
+          "agc": 12
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ag": 12
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "12,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "level": "low",
+        "verdict": "Ânion gap normal",
+        "rows": [],
+        "raw": {
+          "ag": 12,
+          "agc": 12
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+      "input": {
+        "na": 140,
+        "cl": 115,
+        "hco3": 15
+      },
+      "publicOutput": {
+        "id": "anion-gap",
+        "main": [
+          "10,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 10,
+          "agc": 10
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ag": 10
+        },
+        "level": "low",
+        "verdict": "hiperclorêmica"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "10,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "level": "low",
+        "verdict": "Ânion gap normal: se há acidose metabólica, ela é hiperclorêmica",
+        "rows": [],
+        "raw": {
+          "ag": 10,
+          "agc": 10
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+      "input": {
+        "na": 140,
+        "cl": 100,
+        "hco3": 10,
+        "alb": 4
+      },
+      "publicOutput": {
+        "id": "anion-gap",
+        "main": [
+          "30,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 1.2857142857142858
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 1.286
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "30,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "level": "high",
+        "verdict": "Ânion gap aumentado: acidose metabólica por ânions não medidos (lactato, cetonas, uremia, tóxicos)",
+        "rows": [
+          [
+            "Ânion gap corrigido pela albumina",
+            "30,0 mEq/L"
+          ],
+          [
+            "Razão delta (ΔAG/ΔHCO₃⁻)",
+            "1,29: acidose com AG alto isolada"
+          ]
+        ],
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 1.2857142857142858
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+      "input": {
+        "na": 138,
+        "cl": 108,
+        "hco3": 18,
+        "alb": 2
+      },
+      "publicOutput": {
+        "id": "anion-gap",
+        "main": [
+          "12,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 12,
+          "agc": 17,
+          "dr": 0.8333333333333334
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ag": 12,
+          "agc": 17,
+          "dr": 0.833
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "12,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "level": "high",
+        "verdict": "Ânion gap aumentado: acidose metabólica por ânions não medidos (lactato, cetonas, uremia, tóxicos)",
+        "rows": [
+          [
+            "Ânion gap corrigido pela albumina",
+            "17,0 mEq/L"
+          ],
+          [
+            "Razão delta (ΔAG/ΔHCO₃⁻)",
+            "0,83: acidose com AG alto associada a acidose com AG normal"
+          ]
+        ],
+        "raw": {
+          "ag": 12,
+          "agc": 17,
+          "dr": 0.8333333333333334
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 4,
+      "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+      "input": {
+        "na": 140,
+        "cl": 90,
+        "hco3": 20
+      },
+      "publicOutput": {
+        "id": "anion-gap",
+        "main": [
+          "30,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 4.5
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "ag": 30,
+          "dr": 4.5
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "30,0",
+          "mEq/L"
+        ],
+        "label": "Ânion gap",
+        "level": "high",
+        "verdict": "Ânion gap aumentado: acidose metabólica por ânions não medidos (lactato, cetonas, uremia, tóxicos)",
+        "rows": [
+          [
+            "Razão delta (ΔAG/ΔHCO₃⁻)",
+            "4,50: acidose com AG alto associada a alcalose metabólica (ou acidose respiratória crônica compensada)"
+          ]
+        ],
+        "raw": {
+          "ag": 30,
+          "agc": 30,
+          "dr": 4.5
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

@@ -83,3 +83,46 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Anión gap normal
+
+
+### 2
+
+Anión gap normal: si hay acidosis metabólica, es hiperclorémica
+
+
+### 3
+
+Anión gap aumentado: acidosis metabólica por aniones no medidos (lactato, cetonas, uremia, tóxicos)
+
+| Detalles del resultado | |
+| --- | --- |
+| Anión gap corregido por la albúmina | 30,0 mEq/L |
+| Relación delta (ΔAG/ΔHCO₃⁻) | 1,29: acidosis con AG alto aislada |
+
+
+### 4
+
+Anión gap aumentado: acidosis metabólica por aniones no medidos (lactato, cetonas, uremia, tóxicos)
+
+| Detalles del resultado | |
+| --- | --- |
+| Anión gap corregido por la albúmina | 17,0 mEq/L |
+| Relación delta (ΔAG/ΔHCO₃⁻) | 0,83: acidosis con AG alto asociada a acidosis con AG normal |
+
+
+### 5
+
+Anión gap aumentado: acidosis metabólica por aniones no medidos (lactato, cetonas, uremia, tóxicos)
+
+| Detalles del resultado | |
+| --- | --- |
+| Relación delta (ΔAG/ΔHCO₃⁻) | 4,50: acidosis con AG alto asociada a alcalosis metabólica (o acidosis respiratoria crónica compensada) |
+

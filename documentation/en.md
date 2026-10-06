@@ -83,3 +83,46 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Normal anion gap
+
+
+### 2
+
+Normal anion gap: if there is metabolic acidosis, it is hyperchloremic
+
+
+### 3
+
+Increased anion gap: metabolic acidosis due to unmeasured anions (lactate, ketones, uremia, toxins)
+
+| Result details | |
+| --- | --- |
+| Anion gap corrected for albumin | 30.0 mEq/L |
+| Delta ratio (ΔAG/ΔHCO₃⁻) | 1.29: isolated high-AG acidosis |
+
+
+### 4
+
+Increased anion gap: metabolic acidosis due to unmeasured anions (lactate, ketones, uremia, toxins)
+
+| Result details | |
+| --- | --- |
+| Anion gap corrected for albumin | 17.0 mEq/L |
+| Delta ratio (ΔAG/ΔHCO₃⁻) | 0.83: high-AG acidosis associated with normal-AG acidosis |
+
+
+### 5
+
+Increased anion gap: metabolic acidosis due to unmeasured anions (lactate, ketones, uremia, toxins)
+
+| Result details | |
+| --- | --- |
+| Delta ratio (ΔAG/ΔHCO₃⁻) | 4.50: high-AG acidosis associated with metabolic alkalosis (or compensated chronic respiratory acidosis) |
+

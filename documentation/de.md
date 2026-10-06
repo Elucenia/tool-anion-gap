@@ -83,3 +83,46 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Normaler Anionenlücken-Wert
+
+
+### 2
+
+Normaler Anionenlücken-Wert: Falls eine metabolische Azidose vorliegt, ist sie hyperchlorämisch
+
+
+### 3
+
+Erhöhter Anionenlücken-Wert: metabolische Azidose durch nicht gemessene Anionen (Laktat, Ketone, Urämie, Toxine)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Anionenlücke albuminkorrigiert | 30,0 mEq/L |
+| Delta-Verhältnis (ΔAG/ΔHCO₃⁻) | 1,29: isolierte Azidose mit erhöhtem Anionenlücken-Wert |
+
+
+### 4
+
+Erhöhter Anionenlücken-Wert: metabolische Azidose durch nicht gemessene Anionen (Laktat, Ketone, Urämie, Toxine)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Anionenlücke albuminkorrigiert | 17,0 mEq/L |
+| Delta-Verhältnis (ΔAG/ΔHCO₃⁻) | 0,83: Azidose mit erhöhtem Anionenlücken-Wert, assoziiert mit Azidose mit normalem Anionenlücken-Wert |
+
+
+### 5
+
+Erhöhter Anionenlücken-Wert: metabolische Azidose durch nicht gemessene Anionen (Laktat, Ketone, Urämie, Toxine)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Delta-Verhältnis (ΔAG/ΔHCO₃⁻) | 4,50: Azidose mit erhöhtem Anionenlücken-Wert, assoziiert mit metabolischer Alkalose (oder kompensierter chronischer respiratorischer Azidose) |
+

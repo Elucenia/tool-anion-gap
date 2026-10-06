@@ -1,0 +1,1442 @@
+{
+  "id": "anion-gap",
+  "implementationVersion": "anion-gap@native-2026-10-05+eee21eda0454",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ânion gap normal",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ânion gap normal: se há acidose metabólica, ela é hiperclorêmica",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ânion gap corrigido pela albumina",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "30,0 mEq/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Razão delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,29: acidose com AG alto isolada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ânion gap aumentado: acidose metabólica por ânions não medidos (lactato, cetonas, uremia, tóxicos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Ânion gap corrigido pela albumina",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "17,0 mEq/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Razão delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,83: acidose com AG alto associada a acidose com AG normal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ânion gap aumentado: acidose metabólica por ânions não medidos (lactato, cetonas, uremia, tóxicos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Razão delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "4,50: acidose com AG alto associada a alcalose metabólica (ou acidose respiratória crônica compensada)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ânion gap aumentado: acidose metabólica por ânions não medidos (lactato, cetonas, uremia, tóxicos)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Normal anion gap",
+            "locale": "en",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Normal anion gap: if there is metabolic acidosis, it is hyperchloremic",
+            "locale": "en",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Anion gap corrected for albumin",
+                "locale": "en",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "30.0 mEq/L",
+                "locale": "en",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Delta ratio (ΔAG/ΔHCO₃⁻)",
+                "locale": "en",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "1.29: isolated high-AG acidosis",
+                "locale": "en",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Increased anion gap: metabolic acidosis due to unmeasured anions (lactate, ketones, uremia, toxins)",
+            "locale": "en",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Anion gap corrected for albumin",
+                "locale": "en",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "17.0 mEq/L",
+                "locale": "en",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Delta ratio (ΔAG/ΔHCO₃⁻)",
+                "locale": "en",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "0.83: high-AG acidosis associated with normal-AG acidosis",
+                "locale": "en",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Increased anion gap: metabolic acidosis due to unmeasured anions (lactate, ketones, uremia, toxins)",
+            "locale": "en",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Delta ratio (ΔAG/ΔHCO₃⁻)",
+                "locale": "en",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "4.50: high-AG acidosis associated with metabolic alkalosis (or compensated chronic respiratory acidosis)",
+                "locale": "en",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Increased anion gap: metabolic acidosis due to unmeasured anions (lactate, ketones, uremia, toxins)",
+            "locale": "en",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Anión gap normal",
+            "locale": "es",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Anión gap normal: si hay acidosis metabólica, es hiperclorémica",
+            "locale": "es",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Anión gap corregido por la albúmina",
+                "locale": "es",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "30,0 mEq/L",
+                "locale": "es",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Relación delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "es",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "1,29: acidosis con AG alto aislada",
+                "locale": "es",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anión gap aumentado: acidosis metabólica por aniones no medidos (lactato, cetonas, uremia, tóxicos)",
+            "locale": "es",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Anión gap corregido por la albúmina",
+                "locale": "es",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "17,0 mEq/L",
+                "locale": "es",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Relación delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "es",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "0,83: acidosis con AG alto asociada a acidosis con AG normal",
+                "locale": "es",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anión gap aumentado: acidosis metabólica por aniones no medidos (lactato, cetonas, uremia, tóxicos)",
+            "locale": "es",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Relación delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "es",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "4,50: acidosis con AG alto asociada a alcalosis metabólica (o acidosis respiratoria crónica compensada)",
+                "locale": "es",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anión gap aumentado: acidosis metabólica por aniones no medidos (lactato, cetonas, uremia, tóxicos)",
+            "locale": "es",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Trou anionique normal",
+            "locale": "fr",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Trou anionique normal : s’il existe une acidose métabolique, elle est hyperchlorémique",
+            "locale": "fr",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Trou anionique corrigé pour l’albumine",
+                "locale": "fr",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "30,0 mEq/L",
+                "locale": "fr",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Rapport delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "fr",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "1,29 : acidose à trou anionique élevé isolée",
+                "locale": "fr",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Trou anionique augmenté : acidose métabolique due à des anions non mesurés (lactate, cétones, urémie, toxiques)",
+            "locale": "fr",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Trou anionique corrigé pour l’albumine",
+                "locale": "fr",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "17,0 mEq/L",
+                "locale": "fr",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Rapport delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "fr",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "0,83 : acidose à trou anionique élevé associée à une acidose à trou anionique normal",
+                "locale": "fr",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Trou anionique augmenté : acidose métabolique due à des anions non mesurés (lactate, cétones, urémie, toxiques)",
+            "locale": "fr",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapport delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "fr",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "4,50 : acidose à trou anionique élevé associée à une alcalose métabolique (ou à une acidose respiratoire chronique compensée)",
+                "locale": "fr",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Trou anionique augmenté : acidose métabolique due à des anions non mesurés (lactate, cétones, urémie, toxiques)",
+            "locale": "fr",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Normaler Anionenlücken-Wert",
+            "locale": "de",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Normaler Anionenlücken-Wert: Falls eine metabolische Azidose vorliegt, ist sie hyperchlorämisch",
+            "locale": "de",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Anionenlücke albuminkorrigiert",
+                "locale": "de",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "30,0 mEq/L",
+                "locale": "de",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Delta-Verhältnis (ΔAG/ΔHCO₃⁻)",
+                "locale": "de",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "1,29: isolierte Azidose mit erhöhtem Anionenlücken-Wert",
+                "locale": "de",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Erhöhter Anionenlücken-Wert: metabolische Azidose durch nicht gemessene Anionen (Laktat, Ketone, Urämie, Toxine)",
+            "locale": "de",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Anionenlücke albuminkorrigiert",
+                "locale": "de",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "17,0 mEq/L",
+                "locale": "de",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Delta-Verhältnis (ΔAG/ΔHCO₃⁻)",
+                "locale": "de",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "0,83: Azidose mit erhöhtem Anionenlücken-Wert, assoziiert mit Azidose mit normalem Anionenlücken-Wert",
+                "locale": "de",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Erhöhter Anionenlücken-Wert: metabolische Azidose durch nicht gemessene Anionen (Laktat, Ketone, Urämie, Toxine)",
+            "locale": "de",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Delta-Verhältnis (ΔAG/ΔHCO₃⁻)",
+                "locale": "de",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "4,50: Azidose mit erhöhtem Anionenlücken-Wert, assoziiert mit metabolischer Alkalose (oder kompensierter chronischer respiratorischer Azidose)",
+                "locale": "de",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Erhöhter Anionenlücken-Wert: metabolische Azidose durch nicht gemessene Anionen (Laktat, Ketone, Urämie, Toxine)",
+            "locale": "de",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Anion gap normale",
+            "locale": "it",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Anion gap normale: se è presente acidosi metabolica, è ipercloremica",
+            "locale": "it",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Anion gap corretto per l’albumina",
+                "locale": "it",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "30,0 mEq/L",
+                "locale": "it",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Rapporto delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "it",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "1,29: acidosi con AG alto isolata",
+                "locale": "it",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anion gap aumentato: acidosi metabolica da anioni non misurati (lattato, chetoni, uremia, tossici)",
+            "locale": "it",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Anion gap corretto per l’albumina",
+                "locale": "it",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "17,0 mEq/L",
+                "locale": "it",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Rapporto delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "it",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "0,83: acidosi con AG alto associata ad acidosi con AG normale",
+                "locale": "it",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anion gap aumentato: acidosi metabolica da anioni non misurati (lattato, chetoni, uremia, tossici)",
+            "locale": "it",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Rapporto delta (ΔAG/ΔHCO₃⁻)",
+                "locale": "it",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "4,50: acidosi con AG alto associata ad alcalosi metabolica (o acidosi respiratoria cronica compensata)",
+                "locale": "it",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Anion gap aumentato: acidosi metabolica da anioni non misurati (lattato, chetoni, uremia, tossici)",
+            "locale": "it",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفجوة الأيونية طبيعية",
+            "locale": "ar",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الفجوة الأيونية طبيعية: إذا وُجد حماض استقلابي فهو فرط كلوريمي",
+            "locale": "ar",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الفجوة الأيونية المصححة بحسب الألبومين",
+                "locale": "ar",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "٣٠٫٠ mEq/L",
+                "locale": "ar",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "نسبة دلتا (ΔAG/ΔHCO₃⁻)",
+                "locale": "ar",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "١٫٢٩: حماض مع فجوة أيونية مرتفعة معزول",
+                "locale": "ar",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فجوة أيونية مرتفعة: حماض استقلابي بسبب أنيونات غير مقاسة (اللاكتات، الأجسام الكيتونية، اليوريميا، السموم)",
+            "locale": "ar",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الفجوة الأيونية المصححة بحسب الألبومين",
+                "locale": "ar",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "١٧٫٠ mEq/L",
+                "locale": "ar",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "نسبة دلتا (ΔAG/ΔHCO₃⁻)",
+                "locale": "ar",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "٠٫٨٣: حماض مع فجوة أيونية مرتفعة مرتبط بحماض مع فجوة أيونية طبيعية",
+                "locale": "ar",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فجوة أيونية مرتفعة: حماض استقلابي بسبب أنيونات غير مقاسة (اللاكتات، الأجسام الكيتونية، اليوريميا، السموم)",
+            "locale": "ar",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "نسبة دلتا (ΔAG/ΔHCO₃⁻)",
+                "locale": "ar",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "٤٫٥٠: حماض مع فجوة أيونية مرتفعة مرتبط بقلاء استقلابي (أو حماض تنفسي مزمن مُعوَّض)",
+                "locale": "ar",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فجوة أيونية مرتفعة: حماض استقلابي بسبب أنيونات غير مقاسة (اللاكتات، الأجسام الكيتونية، اليوريميا، السموم)",
+            "locale": "ar",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "阴离子间隙正常",
+            "locale": "zh",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "阴离子间隙正常：如果存在代谢性酸中毒，则为高氯性",
+            "locale": "zh",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "经白蛋白校正的阴离子间隙",
+                "locale": "zh",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "30.0 mEq/L",
+                "locale": "zh",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Delta 比值（ΔAG/ΔHCO₃⁻）",
+                "locale": "zh",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "1.29：单纯高 AG 酸中毒",
+                "locale": "zh",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "阴离子间隙升高：由未测定胆阴离子（乳酸、酮体、尿毒症、毒物）引起的代谢性酸中毒",
+            "locale": "zh",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "经白蛋白校正的阴离子间隙",
+                "locale": "zh",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "17.0 mEq/L",
+                "locale": "zh",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Delta 比值（ΔAG/ΔHCO₃⁻）",
+                "locale": "zh",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "0.83：高 AG 酸中毒合并正常 AG 酸中毒",
+                "locale": "zh",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "阴离子间隙升高：由未测定胆阴离子（乳酸、酮体、尿毒症、毒物）引起的代谢性酸中毒",
+            "locale": "zh",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Delta 比值（ΔAG/ΔHCO₃⁻）",
+                "locale": "zh",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "4.50：高 AG 酸中毒合并代谢性碱中毒（或代偿性慢性呼吸性酸中毒）",
+                "locale": "zh",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "阴离子间隙升高：由未测定胆阴离子（乳酸、酮体、尿毒症、毒物）引起的代谢性酸中毒",
+            "locale": "zh",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "アニオンギャップ正常",
+            "locale": "ja",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "アニオンギャップは正常：代謝性アシドーシスがあるなら高クロール性です",
+            "locale": "ja",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "アルブミン補正アニオンギャップ",
+                "locale": "ja",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "30.0 mEq/L",
+                "locale": "ja",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "デルタ比（ΔAG/ΔHCO₃⁻）",
+                "locale": "ja",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "1.29: 高AGアシドーシス単独",
+                "locale": "ja",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "アニオンギャップ増加：未測定アニオン（乳酸、ケトン、尿毒症、毒物）による代謝性アシドーシス",
+            "locale": "ja",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "アルブミン補正アニオンギャップ",
+                "locale": "ja",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "17.0 mEq/L",
+                "locale": "ja",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "デルタ比（ΔAG/ΔHCO₃⁻）",
+                "locale": "ja",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "0.83: 高AGアシドーシスに正常AGアシドーシスを伴う",
+                "locale": "ja",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "アニオンギャップ増加：未測定アニオン（乳酸、ケトン、尿毒症、毒物）による代謝性アシドーシス",
+            "locale": "ja",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "デルタ比（ΔAG/ΔHCO₃⁻）",
+                "locale": "ja",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "4.50: 高AGアシドーシスに代謝性アルカローシス（または代償された慢性呼吸性アシドーシス）を伴う",
+                "locale": "ja",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "アニオンギャップ増加：未測定アニオン（乳酸、ケトン、尿毒症、毒物）による代謝性アシドーシス",
+            "locale": "ja",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Na 140, Cl 104, HCO₃⁻ 24: AG 12 (limite normal)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "एनियन गैप सामान्य",
+            "locale": "hi",
+            "template": "documented-authored-2ccd5f3256aa24f41de8"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Diarreia: Na 140, Cl 115, HCO₃⁻ 15: AG 10, hiperclorêmica",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "एनियन गैप सामान्य: यदि मेटाबोलिक एसिडोसिस है, तो वह हाइपरक्लोरेमिक है",
+            "locale": "hi",
+            "template": "documented-authored-d410c83907ec24e4a01a"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Acidose lática: Na 140, Cl 100, HCO₃⁻ 10, Alb 4: AG 30, delta 1,29",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एल्ब्यूमिन-संशोधित एनियन गैप",
+                "locale": "hi",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "30.0 mEq/L",
+                "locale": "hi",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "डेल्टा अनुपात (ΔAG/ΔHCO₃⁻)",
+                "locale": "hi",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "1.29: पृथक उच्च AG एसिडोसिस",
+                "locale": "hi",
+                "template": "documented-authored-dd0bc80d31bf9787746c",
+                "sourceNumbers": [
+                  1.29
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "एनियन गैप बढ़ा हुआ: मापे न गए एनियनों (लैक्टेट, कीटोन, यूरिमिया, विष) के कारण मेटाबोलिक एसिडोसिस",
+            "locale": "hi",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Hipoalbuminemia: Na 138, Cl 108, HCO₃⁻ 18, Alb 2: AG 12 → corrigido 17, delta 0,83",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "एल्ब्यूमिन-संशोधित एनियन गैप",
+                "locale": "hi",
+                "template": "documented-authored-65f8b13249a54c176133"
+              },
+              "value": {
+                "text": "17.0 mEq/L",
+                "locale": "hi",
+                "template": "documented-authored-94ec76d1c2b95bf9b65a",
+                "sourceNumbers": [
+                  17
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "डेल्टा अनुपात (ΔAG/ΔHCO₃⁻)",
+                "locale": "hi",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "0.83: उच्च AG एसिडोसिस के साथ सामान्य AG एसिडोसिस",
+                "locale": "hi",
+                "template": "documented-authored-24a106a8f25ff499557b",
+                "sourceNumbers": [
+                  0.83
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "एनियन गैप बढ़ा हुआ: मापे न गए एनियनों (लैक्टेट, कीटोन, यूरिमिया, विष) के कारण मेटाबोलिक एसिडोसिस",
+            "locale": "hi",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Vômitos + cetoacidose: Na 140, Cl 90, HCO₃⁻ 20: AG 30, delta 4,5",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "डेल्टा अनुपात (ΔAG/ΔHCO₃⁻)",
+                "locale": "hi",
+                "template": "documented-authored-a5e10c8b3293204bbe69"
+              },
+              "value": {
+                "text": "4.50: उच्च AG एसिडोसिस के साथ मेटाबोलिक अल्कलोसिस (या प्रतिपूरित पुराना श्वसन एसिडोसिस)",
+                "locale": "hi",
+                "template": "documented-authored-4a52e7f0ab2a3647dc3d",
+                "sourceNumbers": [
+                  4.5
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "एनियन गैप बढ़ा हुआ: मापे न गए एनियनों (लैक्टेट, कीटोन, यूरिमिया, विष) के कारण मेटाबोलिक एसिडोसिस",
+            "locale": "hi",
+            "template": "documented-authored-93761889232220eaf3e5"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
